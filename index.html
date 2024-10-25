@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disc Scheduling Algorithms</title>
+
+
+<body>
+
+<h1> Welcome To The Platform Where You Can Test Disk Scheduling Algorithm
+</h1>
+<img src="https://japp.io/wp-content/uploads/2019/07/hard-disk.jpg" alt = "Disk Scheduling image" height="200">
+<br>
+<br>
+<u><big>Disk Scheduling Algorithms</big></u> <!--used bold and italic and under line-->
+<br>
+<br>
+<br>
+<ul>
+
+
+    <li><a href="https://www.geeksforgeeks.org/disk-scheduling-algorithms/" target="_main"><b>FCFS</b></a></li>
+
+    <li><a href="https://www.geeksforgeeks.org/disk-scheduling-algorithms/" target="_main"><b>SSTF</b></a></li>
+
+    <li><a href="https://www.geeksforgeeks.org/disk-scheduling-algorithms/" target="_main"><b>SCAN</b></a></li>
+
+    <li><a href="https://www.geeksforgeeks.org/disk-scheduling-algorithms/" target="_main"><b>C-SCAN</b></a></li>
+
+    <li><a href="https://www.geeksforgeeks.org/disk-scheduling-algorithms/" target="_main"><b>LOOK</b></a></li>
+
+    <li><a href="https://www.geeksforgeeks.org/disk-scheduling-algorithms/" target="_main"><b>C-LOOK</b></a></li>
+
+</ul>
+
+<pre>
+  Disk scheduling algorithms are crucial in managing how data is read from and written to a computer’s hard disk.
+  These algorithms help determine the order in which disk read and write requests are processed, significantly impacting
+  the speed and efficiency of data access. Common disk scheduling methods include First-Come, First-Served (FCFS),
+  Shortest Seek Time First (SSTF), SCAN, C-SCAN, LOOK, and C-LOOK. By understanding and implementing these algorithms,
+  we can optimize system performance and ensure faster data retrieval.
+</pre>
+
+<main>
+    <h1>Disk Scheduling Algorithms</h1>
+
+    <label>Total Disk Size: <input type="number" id="diskSize" /></label><br />
+    <label>Initial Head Position: <input type="number" id="headPosition" /></label><br />
+    <label>Disk Requests (space-separated): <input type="text" id="requests" /></label><br />
+
+    <label>Choose an Algorithm:
+        <select id="algorithm">
+            <option value="fcfs">FCFS</option>
+            <option value="sstf">SSTF</option>
+            <option value="scan">SCAN</option>
+            <option value="cscan">C-SCAN</option>
+            <option value="look">LOOK</option>
+            <option value="clook">C-LOOK</option>
+        </select>
+    </label><br />
+
+    <label>Direction (for SCAN and LOOK):
+        <input type="text" id="direction" placeholder="left or right" />
+    </label><br />
+
+    <button onclick="runAlgorithm()">Run Algorithm</button>
+
+    <canvas id="diskChart"></canvas>
+</main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+</html>
